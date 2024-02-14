@@ -23,6 +23,18 @@ if new_raw.get_data().dtype == "complex128":
 else:
     pass
 
+new = new_raw.get_data().dtype,
+old = original_raw.get_data().dtype
+
+def melatoninCalc():
+    melato = melatoninValues.get(new, " ")
+    melatoCalc = realMelatoRates.get(melato, " ")
+    print(melatoCalc)
+    melatonin1 = MelatoninCalc.get(int(MelatoninInput), " ")
+    print(melatonin1)
+
+melatoninCalc()
+
 #def SleepMOCaptcha():
  #   melatonin1 = melatoninRates.get(MelatoninInput, "Invalid input")
 
