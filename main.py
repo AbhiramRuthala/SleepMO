@@ -1,6 +1,7 @@
 import mne
 import matplotlib.pyplot as plt
 import numpy as np
+import random as rd
 
 data_path = mne.datasets.sample.data_path()
 sample_data_section = data_path / "MEG" / "Sample" / "sample_audvis_raw.fif"
