@@ -13,6 +13,7 @@ Utilizing the melatonin levels every night, SleepMO provides recommendations on 
 
 # Reports.py: Generated Reports
 <img width="1470" alt="Screenshot 2024-02-19 at 7 05 37 PM" src="https://github.com/AbhiramRuthala/SleepMO/assets/134224393/42927077-614a-4fb5-b373-af77fae89804">
+<img width="1159" alt="Screenshot 2024-02-19 at 7 06 20 PM" src="https://github.com/AbhiramRuthala/SleepMO/assets/134224393/d9dec713-c437-4ab1-ab83-35c95f1fc286">
 
 # Future Goals
 For now, SleepMO takes the relative pre-set melatonin values. My goal is to get it to work with my own values based on my behavior and my EEG values.
