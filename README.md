@@ -17,4 +17,4 @@ Utilizing the melatonin levels every night, SleepMO provides recommendations on 
 <img width="1078" alt="Screenshot 2024-02-22 at 11 45 14 PM" src="https://github.com/AbhiramRuthala/SleepMO/assets/134224393/341db526-c323-42e6-be5e-1f0807f59c63">
 
 # Future Goals
-For now, SleepMO takes the relative pre-set melatonin values. My goal is to get it to work with my own values based on my behavior and my EEG values.
+My goal is to get it to work with my own values based on my behavior and my EEG values. I'm currently working on frequency tagging the data using SSVEP and computing comparisons between PSD (Power Spectral Density) and Signal-Noise Ratio (SNR) so that I can practically predict values based on certain sleep factors to be inputted to provide accurate recommendations.
