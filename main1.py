@@ -181,6 +181,8 @@ value_szn = raw.info["bads"]
 print(f"Average SNR (ROI): {snrs_roi.mean()}")
 print(f"Rounded version: {average_snr}")
 
+# Placeholder values for melatonin
+
 SNR_predict_melatonin ={
     41:"75",
     25:"43",
@@ -200,6 +202,8 @@ report.save("report_raw.html", overwrite=True)
 print(f"We are generating {name}'s data report")
 
 # Define the logistics of the recommendations
+
+# Don't mind the indentation. If you do see a red squiggly line below your code, you'll just need to press "Tab" or "Backspace". You'll need to see if the squiggly line goes away.
 
 if melatonin_get == "75":
     myhtml=f"""
@@ -222,6 +226,506 @@ if melatonin_get == "75":
   # Save the recommendation to the initial file.
     report.add_html(html=myhtml, title=name + "'s Personalized Recommendations")
     report.save("report_add_html.html", overwrite=True)
+        report.add_html(html=myhtml, title=name + "'s Personalized Recommendations")
+    report.save("report_add_html.html", overwrite=True)
+    if SleepSchedule == "10 hours":
+        if age < 18:
+            myhtml = f"""
+            <h1> Great Job {name}! </h1>
+            <p> This will help with sleep immensely. Stay consistent and continue to endure growth and development. </p>
+            """
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml = """
+                <h1> Great Job </h1>
+                <p> This will help with sleep immensely. Stay consistent and continue to endure growth and development. </p>
+                """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml="""
+            <h1> Keep Doing What You're Doing </h1>
+            <p> 10 hours is probably a little too much, but it helps with growth. </p>
+            <p></p>
+            <p> As you'll be wrapping up your growth within the ages of 18-27, this is the time where you shouldn't compromise your growth. Keep doing what you're doing. </p>
+            """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml="""
+            <h1> Wow </h1>
+            <p> That's a great amount of sleep. Great job!
+            """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+                <h1> At your age, the main goal would be to aim for more sleep </h1>
+                """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+    elif SleepSchedule == "9 hours":
+        if age == 18:
+            myhtml = """
+                <h1> Good Job </h1>
+                <p> This will help with sleep immensely. Stay consistent and continue to endure growth and development. </p>
+                """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "18" and age < "27":
+            myhtml = """
+            <h1> Keep Doing What You're Doing </h1>
+            <p> 9 hours is a great amount of sleep </p>
+            <p></p>
+            <p> As you'll be wrapping up your growth within the ages of 18-27, this is the time where you shouldn't compromise your growth. Keep doing what you're doing. </p>
+            """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "30" and age < "45":
+            myhtml = """
+            <h1> Wow </h1>
+            <p> That's a good amount of sleep. Great job!
+            """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+                <h1> At your age, the main goal would be to aim for more sleep </h1>
+                """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+    elif SleepSchedule == "8 hours":
+        if age < 18:
+            myhtml=f"""
+            <h1> 8 hours! </h1>
+            <p> Great job <b>{name}</b>! Continue to do what you are doing. Stick to this sleep schedule and you will be great. </p>"""
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml=f"""
+            <h1> Sleep Recommendations </h1>
+            <p> You're still growing {name}, so make sure to stay consistent and endure the growth.</p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml=f"""
+            <h1> {name}'s Sleep Recommendations </h1>
+            <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = f"""
+            <h1> {name}'s Sleep Recommendations </h1>
+            <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+            <h1> At your age, the main goal would be to aim for more sleep </h1>
+            """
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+    elif SleepSchedule == "7 hours":
+        if age < 18:
+            myhtml=f"""
+            <h1> 8 hours! </h1>
+            <p> Great job <b>{name}</b>! Continue to do what you are doing. Stick to this sleep schedule and you will be great. </p>"""
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml=f"""
+            <h1> Sleep Recommendations </h1>
+            <p> You're still growing {name}, so make sure to stay consistent and endure the growth.</p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml=f"""
+            <h1> {name}'s Sleep Recommendations </h1>
+            <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = f"""
+            <h1> {name}'s Sleep Recommendations </h1>
+            <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+            <h1> At your age, the main goal would be to aim for more sleep </h1>
+            """
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+
+    elif SleepSchedule == "6 hours":
+        if age < 18:
+            myhtml=f"""
+            <h1> 8 hours! </h1>
+            <p> Great job <b>{name}</b>! Continue to do what you are doing. Stick to this sleep schedule and you will be great. </p>"""
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml=f"""
+            <h1> Sleep Recommendations </h1>
+            <p> You're still growing {name}, so make sure to stay consistent and endure the growth.</p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml=f"""
+            <h1> {name}'s Sleep Recommendations </h1>
+            <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = f"""
+            <h1> {name}'s Sleep Recommendations </h1>
+            <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+            <h1> At your age, the main goal would be to aim for more sleep </h1>
+            """
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+    elif SleepSchedule == "5 hours":
+        if age < 18:
+            myhtml=f"""
+            <h1> 8 hours! </h1>
+            <p> Great job <b>{name}</b>! Continue to do what you are doing. Stick to this sleep schedule and you will be great. </p>"""
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml=f"""
+            <h1> Sleep Recommendations </h1>
+            <p> You're still growing {name}, so make sure to stay consistent and endure the growth.</p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml=f"""
+            <h1> {name}'s Sleep Recommendations </h1>
+            <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = f"""
+            <h1> {name}'s Sleep Recommendations </h1>
+            <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+            <h1> At your age, the main goal would be to aim for more sleep </h1>
+            """
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+
+    elif SleepSchedule == "11 hours":
+        if age < 18:
+            myhtml=f"""
+            <h1> 8 hours! </h1>
+            <p> Great job <b>{name}</b>! Continue to do what you are doing. Stick to this sleep schedule and you will be great. </p>"""
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml=f"""
+            <h1> Sleep Recommendations </h1>
+            <p> You're still growing {name}, so make sure to stay consistent and endure the growth.</p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml=f"""
+            <h1> {name}'s Sleep Recommendations </h1>
+            <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = f"""
+            <h1> {name}'s Sleep Recommendations </h1>
+            <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+            <h1> At your age, the main goal would be to aim for more sleep </h1>
+            """
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+elif melatonin_get == "45":
+    myhtml = f"""
+            <h1> {name}'s Personalized Sleep Recommendations </h1>
+            <p>
+            Through computed <b>melatonin</b> levels, here's what we suggest you do:
+            <p></p>
+            <p>
+            1. Make sure to stay hydrated
+            </p>
+            <p></p>
+            <p>
+            2. Make sure to limit the exposure to blue light before you sleep
+            </p>
+            <p></p>
+            <p>
+            3. Make sure to drop your body temperature before you sleep
+            </p>
+            """
+    report.add_html(html=myhtml, title=name + "'s Personalized Recommendations")
+    report.save("report_add_html.html", overwrite=True)
+    if SleepSchedule == "10 hours":
+        if age < 18:
+            myhtml = f"""
+                <h1> Great Job {name}! </h1>
+                <p> This will help with sleep immensely. Stay consistent and continue to endure growth and development. </p>
+                """
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml = """
+                    <h1> Great Job </h1>
+                    <p> This will help with sleep immensely. Stay consistent and continue to endure growth and development. </p>
+                    """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml = """
+                <h1> Keep Doing What You're Doing </h1>
+                <p> 10 hours is probably a little too much, but it helps with growth. </p>
+                <p></p>
+                <p> As you'll be wrapping up your growth within the ages of 18-27, this is the time where you shouldn't compromise your growth. Keep doing what you're doing. </p>
+                """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = """
+                <h1> Wow </h1>
+                <p> That's a great amount of sleep. Great job!
+                """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+                    <h1> At your age, the main goal would be to aim for more sleep </h1>
+                    """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+    elif SleepSchedule == "9 hours":
+        if age == 18:
+            myhtml = """
+                    <h1> Good Job </h1>
+                    <p> This will help with sleep immensely. Stay consistent and continue to endure growth and development. </p>
+                    """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "18" and age < "27":
+            myhtml = """
+                <h1> Keep Doing What You're Doing </h1>
+                <p> 9 hours is a great amount of sleep </p>
+                <p></p>
+                <p> As you'll be wrapping up your growth within the ages of 18-27, this is the time where you shouldn't compromise your growth. Keep doing what you're doing. </p>
+                """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "30" and age < "45":
+            myhtml = """
+                <h1> Wow </h1>
+                <p> That's a good amount of sleep. Great job!
+                """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+                    <h1> At your age, the main goal would be to aim for more sleep </h1>
+                    """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+    elif SleepSchedule == "8 hours":
+        if age < 18:
+            myhtml = f"""
+                <h1> 8 hours! </h1>
+                <p> Great job <b>{name}</b>! Continue to do what you are doing. Stick to this sleep schedule and you will be great. </p>"""
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml = f"""
+                <h1> Sleep Recommendations </h1>
+                <p> You're still growing {name}, so make sure to stay consistent and endure the growth.</p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml = f"""
+                <h1> {name}'s Sleep Recommendations </h1>
+                <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = f"""
+                <h1> {name}'s Sleep Recommendations </h1>
+                <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+                <h1> At your age, the main goal would be to aim for more sleep </h1>
+                """
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+    elif SleepSchedule == "7 hours":
+        if age < 18:
+            myhtml = f"""
+                <h1> 8 hours! </h1>
+                <p> Great job <b>{name}</b>! Continue to do what you are doing. Stick to this sleep schedule and you will be great. </p>"""
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml = f"""
+                <h1> Sleep Recommendations </h1>
+                <p> You're still growing {name}, so make sure to stay consistent and endure the growth.</p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml = f"""
+                <h1> {name}'s Sleep Recommendations </h1>
+                <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = f"""
+                <h1> {name}'s Sleep Recommendations </h1>
+                <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+                <h1> At your age, the main goal would be to aim for more sleep </h1>
+                """
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+
+    elif SleepSchedule == "6 hours":
+        if age < 18:
+            myhtml = f"""
+                <h1> 8 hours! </h1>
+                <p> Great job <b>{name}</b>! Continue to do what you are doing. Stick to this sleep schedule and you will be great. </p>"""
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml = f"""
+                <h1> Sleep Recommendations </h1>
+                <p> You're still growing {name}, so make sure to stay consistent and endure the growth.</p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml = f"""
+                <h1> {name}'s Sleep Recommendations </h1>
+                <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = f"""
+                <h1> {name}'s Sleep Recommendations </h1>
+                <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+                <h1> At your age, the main goal would be to aim for more sleep </h1>
+                """
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+    elif SleepSchedule == "5 hours":
+        if age < 18:
+            myhtml = f"""
+                <h1> 8 hours! </h1>
+                <p> Great job <b>{name}</b>! Continue to do what you are doing. Stick to this sleep schedule and you will be great. </p>"""
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml = f"""
+                <h1> Sleep Recommendations </h1>
+                <p> You're still growing {name}, so make sure to stay consistent and endure the growth.</p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml = f"""
+                <h1> {name}'s Sleep Recommendations </h1>
+                <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = f"""
+                <h1> {name}'s Sleep Recommendations </h1>
+                <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+                <h1> At your age, the main goal would be to aim for more sleep </h1>
+                """
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+
+    elif SleepSchedule == "11 hours":
+        if age < 18:
+            myhtml = f"""
+                <h1> 8 hours! </h1>
+                <p> Great job <b>{name}</b>! Continue to do what you are doing. Stick to this sleep schedule and you will be great. </p>"""
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml = f"""
+                <h1> Sleep Recommendations </h1>
+                <p> You're still growing {name}, so make sure to stay consistent and endure the growth.</p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml = f"""
+                <h1> {name}'s Sleep Recommendations </h1>
+                <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = f"""
+                <h1> {name}'s Sleep Recommendations </h1>
+                <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+                <h1> At your age, the main goal would be to aim for more sleep </h1>
+                """
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
 elif melatonin_get == "25":
     myhtml = f"""
         <h1> {name}'s Personalized Sleep Recommendations </h1>
@@ -242,6 +746,506 @@ elif melatonin_get == "25":
         """
     report.add_html(html=myhtml, title=name + "'s Personalized Recommendations")
     report.save("report_add_html.html", overwrite=True)
+      report.add_html(html=myhtml, title=name + "'s Personalized Recommendations")
+    report.save("report_add_html.html", overwrite=True)
+    if SleepSchedule == "10 hours":
+        if age < 18:
+            myhtml = f"""
+            <h1> Great Job {name}! </h1>
+            <p> This will help with sleep immensely. Stay consistent and continue to endure growth and development. </p>
+            """
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml = """
+                <h1> Great Job </h1>
+                <p> This will help with sleep immensely. Stay consistent and continue to endure growth and development. </p>
+                """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml="""
+            <h1> Keep Doing What You're Doing </h1>
+            <p> 10 hours is probably a little too much, but it helps with growth. </p>
+            <p></p>
+            <p> As you'll be wrapping up your growth within the ages of 18-27, this is the time where you shouldn't compromise your growth. Keep doing what you're doing. </p>
+            """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml="""
+            <h1> Wow </h1>
+            <p> That's a great amount of sleep. Great job!
+            """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+                <h1> At your age, the main goal would be to aim for more sleep </h1>
+                """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+    elif SleepSchedule == "9 hours":
+        if age == 18:
+            myhtml = """
+                <h1> Good Job </h1>
+                <p> This will help with sleep immensely. Stay consistent and continue to endure growth and development. </p>
+                """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "18" and age < "27":
+            myhtml = """
+            <h1> Keep Doing What You're Doing </h1>
+            <p> 9 hours is a great amount of sleep </p>
+            <p></p>
+            <p> As you'll be wrapping up your growth within the ages of 18-27, this is the time where you shouldn't compromise your growth. Keep doing what you're doing. </p>
+            """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "30" and age < "45":
+            myhtml = """
+            <h1> Wow </h1>
+            <p> That's a good amount of sleep. Great job!
+            """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+                <h1> At your age, the main goal would be to aim for more sleep </h1>
+                """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+    elif SleepSchedule == "8 hours":
+        if age < 18:
+            myhtml=f"""
+            <h1> 8 hours! </h1>
+            <p> Great job <b>{name}</b>! Continue to do what you are doing. Stick to this sleep schedule and you will be great. </p>"""
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml=f"""
+            <h1> Sleep Recommendations </h1>
+            <p> You're still growing {name}, so make sure to stay consistent and endure the growth.</p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml=f"""
+            <h1> {name}'s Sleep Recommendations </h1>
+            <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = f"""
+            <h1> {name}'s Sleep Recommendations </h1>
+            <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+            <h1> At your age, the main goal would be to aim for more sleep </h1>
+            """
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+    elif SleepSchedule == "7 hours":
+        if age < 18:
+            myhtml=f"""
+            <h1> 8 hours! </h1>
+            <p> Great job <b>{name}</b>! Continue to do what you are doing. Stick to this sleep schedule and you will be great. </p>"""
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml=f"""
+            <h1> Sleep Recommendations </h1>
+            <p> You're still growing {name}, so make sure to stay consistent and endure the growth.</p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml=f"""
+            <h1> {name}'s Sleep Recommendations </h1>
+            <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = f"""
+            <h1> {name}'s Sleep Recommendations </h1>
+            <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+            <h1> At your age, the main goal would be to aim for more sleep </h1>
+            """
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+
+    elif SleepSchedule == "6 hours":
+        if age < 18:
+            myhtml=f"""
+            <h1> 8 hours! </h1>
+            <p> Great job <b>{name}</b>! Continue to do what you are doing. Stick to this sleep schedule and you will be great. </p>"""
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml=f"""
+            <h1> Sleep Recommendations </h1>
+            <p> You're still growing {name}, so make sure to stay consistent and endure the growth.</p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml=f"""
+            <h1> {name}'s Sleep Recommendations </h1>
+            <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = f"""
+            <h1> {name}'s Sleep Recommendations </h1>
+            <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+            <h1> At your age, the main goal would be to aim for more sleep </h1>
+            """
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+    elif SleepSchedule == "5 hours":
+        if age < 18:
+            myhtml=f"""
+            <h1> 8 hours! </h1>
+            <p> Great job <b>{name}</b>! Continue to do what you are doing. Stick to this sleep schedule and you will be great. </p>"""
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml=f"""
+            <h1> Sleep Recommendations </h1>
+            <p> You're still growing {name}, so make sure to stay consistent and endure the growth.</p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml=f"""
+            <h1> {name}'s Sleep Recommendations </h1>
+            <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = f"""
+            <h1> {name}'s Sleep Recommendations </h1>
+            <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+            <h1> At your age, the main goal would be to aim for more sleep </h1>
+            """
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+
+    elif SleepSchedule == "11 hours":
+        if age < 18:
+            myhtml=f"""
+            <h1> 8 hours! </h1>
+            <p> Great job <b>{name}</b>! Continue to do what you are doing. Stick to this sleep schedule and you will be great. </p>"""
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml=f"""
+            <h1> Sleep Recommendations </h1>
+            <p> You're still growing {name}, so make sure to stay consistent and endure the growth.</p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml=f"""
+            <h1> {name}'s Sleep Recommendations </h1>
+            <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = f"""
+            <h1> {name}'s Sleep Recommendations </h1>
+            <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+            """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+            <h1> At your age, the main goal would be to aim for more sleep </h1>
+            """
+            report.add_html(html=myhtml, title=name+"'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+elif melatonin_get == "45":
+    myhtml = f"""
+            <h1> {name}'s Personalized Sleep Recommendations </h1>
+            <p>
+            Through computed <b>melatonin</b> levels, here's what we suggest you do:
+            <p></p>
+            <p>
+            1. Make sure to stay hydrated
+            </p>
+            <p></p>
+            <p>
+            2. Make sure to limit the exposure to blue light before you sleep
+            </p>
+            <p></p>
+            <p>
+            3. Make sure to drop your body temperature before you sleep
+            </p>
+            """
+    report.add_html(html=myhtml, title=name + "'s Personalized Recommendations")
+    report.save("report_add_html.html", overwrite=True)
+    if SleepSchedule == "10 hours":
+        if age < 18:
+            myhtml = f"""
+                <h1> Great Job {name}! </h1>
+                <p> This will help with sleep immensely. Stay consistent and continue to endure growth and development. </p>
+                """
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml = """
+                    <h1> Great Job </h1>
+                    <p> This will help with sleep immensely. Stay consistent and continue to endure growth and development. </p>
+                    """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml = """
+                <h1> Keep Doing What You're Doing </h1>
+                <p> 10 hours is probably a little too much, but it helps with growth. </p>
+                <p></p>
+                <p> As you'll be wrapping up your growth within the ages of 18-27, this is the time where you shouldn't compromise your growth. Keep doing what you're doing. </p>
+                """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = """
+                <h1> Wow </h1>
+                <p> That's a great amount of sleep. Great job!
+                """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+                    <h1> At your age, the main goal would be to aim for more sleep </h1>
+                    """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+    elif SleepSchedule == "9 hours":
+        if age == 18:
+            myhtml = """
+                    <h1> Good Job </h1>
+                    <p> This will help with sleep immensely. Stay consistent and continue to endure growth and development. </p>
+                    """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "18" and age < "27":
+            myhtml = """
+                <h1> Keep Doing What You're Doing </h1>
+                <p> 9 hours is a great amount of sleep </p>
+                <p></p>
+                <p> As you'll be wrapping up your growth within the ages of 18-27, this is the time where you shouldn't compromise your growth. Keep doing what you're doing. </p>
+                """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "30" and age < "45":
+            myhtml = """
+                <h1> Wow </h1>
+                <p> That's a good amount of sleep. Great job!
+                """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+                    <h1> At your age, the main goal would be to aim for more sleep </h1>
+                    """
+            report.add_html(html=myhtml, title="data")
+            report.save("report_add_html.html", overwrite=True)
+    elif SleepSchedule == "8 hours":
+        if age < 18:
+            myhtml = f"""
+                <h1> 8 hours! </h1>
+                <p> Great job <b>{name}</b>! Continue to do what you are doing. Stick to this sleep schedule and you will be great. </p>"""
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml = f"""
+                <h1> Sleep Recommendations </h1>
+                <p> You're still growing {name}, so make sure to stay consistent and endure the growth.</p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml = f"""
+                <h1> {name}'s Sleep Recommendations </h1>
+                <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = f"""
+                <h1> {name}'s Sleep Recommendations </h1>
+                <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+                <h1> At your age, the main goal would be to aim for more sleep </h1>
+                """
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+    elif SleepSchedule == "7 hours":
+        if age < 18:
+            myhtml = f"""
+                <h1> 8 hours! </h1>
+                <p> Great job <b>{name}</b>! Continue to do what you are doing. Stick to this sleep schedule and you will be great. </p>"""
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml = f"""
+                <h1> Sleep Recommendations </h1>
+                <p> You're still growing {name}, so make sure to stay consistent and endure the growth.</p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml = f"""
+                <h1> {name}'s Sleep Recommendations </h1>
+                <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = f"""
+                <h1> {name}'s Sleep Recommendations </h1>
+                <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+                <h1> At your age, the main goal would be to aim for more sleep </h1>
+                """
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+
+    elif SleepSchedule == "6 hours":
+        if age < 18:
+            myhtml = f"""
+                <h1> 8 hours! </h1>
+                <p> Great job <b>{name}</b>! Continue to do what you are doing. Stick to this sleep schedule and you will be great. </p>"""
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml = f"""
+                <h1> Sleep Recommendations </h1>
+                <p> You're still growing {name}, so make sure to stay consistent and endure the growth.</p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml = f"""
+                <h1> {name}'s Sleep Recommendations </h1>
+                <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = f"""
+                <h1> {name}'s Sleep Recommendations </h1>
+                <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+                <h1> At your age, the main goal would be to aim for more sleep </h1>
+                """
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+    elif SleepSchedule == "5 hours":
+        if age < 18:
+            myhtml = f"""
+                <h1> 8 hours! </h1>
+                <p> Great job <b>{name}</b>! Continue to do what you are doing. Stick to this sleep schedule and you will be great. </p>"""
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml = f"""
+                <h1> Sleep Recommendations </h1>
+                <p> You're still growing {name}, so make sure to stay consistent and endure the growth.</p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml = f"""
+                <h1> {name}'s Sleep Recommendations </h1>
+                <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = f"""
+                <h1> {name}'s Sleep Recommendations </h1>
+                <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+                <h1> At your age, the main goal would be to aim for more sleep </h1>
+                """
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+
+    elif SleepSchedule == "11 hours":
+        if age < 18:
+            myhtml = f"""
+                <h1> 8 hours! </h1>
+                <p> Great job <b>{name}</b>! Continue to do what you are doing. Stick to this sleep schedule and you will be great. </p>"""
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
+        elif age == 18:
+            myhtml = f"""
+                <h1> Sleep Recommendations </h1>
+                <p> You're still growing {name}, so make sure to stay consistent and endure the growth.</p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 18 and age < 27:
+            myhtml = f"""
+                <h1> {name}'s Sleep Recommendations </h1>
+                <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > 30 and age < 45:
+            myhtml = f"""
+                <h1> {name}'s Sleep Recommendations </h1>
+                <p> Main thing is to stay consistent. Also, make sure to practice good routine practices when you go to sleep. </p>
+                """
+            report.add_html(html=myhtml, title="Data")
+            report.save("report_add_html.html", overwrite=True)
+        elif age > "55" and age < "70":
+            myhtml = """
+                <h1> At your age, the main goal would be to aim for more sleep </h1>
+                """
+            report.add_html(html=myhtml, title=name + "'s Personalized Sleep Recommendations")
+            report.save("report_add_html.html", overwrite=True)
 else:
   # System will exit if corresponding SNR isn't reached. I need to define what this means for an individual.
     sys.exit()
