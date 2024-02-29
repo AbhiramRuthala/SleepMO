@@ -11,6 +11,12 @@ Utilizing the melatonin levels every night, SleepMO provides recommendations on 
 ## Magnetometer Data
 ![Figure_2](https://github.com/AbhiramRuthala/SleepMO/assets/134224393/8320c3fb-6022-4f4a-9856-1c3892c26e11)
 
+## Frequency Tagging: SSVEP(Steady State Visual Evoked Potential) Analysis 
+Signal-To-Noise Ratio at 12Hz for Subject-01 and Session-01
+~~~
+Rounded SNR (Regions of Interest): 11
+~~~
+
 # Reports.py: Generated Reports
 <img width="1470" alt="Screenshot 2024-02-19 at 7 05 37 PM" src="https://github.com/AbhiramRuthala/SleepMO/assets/134224393/42927077-614a-4fb5-b373-af77fae89804">
 <img width="1159" alt="Screenshot 2024-02-19 at 7 06 20 PM" src="https://github.com/AbhiramRuthala/SleepMO/assets/134224393/d9dec713-c437-4ab1-ab83-35c95f1fc286">
