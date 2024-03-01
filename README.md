@@ -11,7 +11,7 @@ Utilizing the melatonin levels every night, SleepMO provides recommendations on 
 ## Magnetometer Data
 ![Figure_2](https://github.com/AbhiramRuthala/SleepMO/assets/134224393/8320c3fb-6022-4f4a-9856-1c3892c26e11)
 
-## Electroencephalogram Data
+## Electroencephalogram Data (Global Field Power: True)
 ![eeg](https://github.com/AbhiramRuthala/SleepMO/assets/134224393/8d393d66-80bf-4eac-8c4d-1d1ecdf8a14c)
 
 ## Frequency Tagging: SSVEP(Steady State Visual Evoked Potential) Analysis 
