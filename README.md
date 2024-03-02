@@ -5,7 +5,7 @@ Utilizing the melatonin levels every night, SleepMO provides recommendations on 
 
 # Projections On Sample Raw Data
 
-## Joint Data: Scalp Topograph and EEG Recording
+## Joint Data: Plot of Scalp Topograph and EEG Recording
 ![Figure_1](https://github.com/AbhiramRuthala/SleepMO/assets/134224393/2de49942-c756-463c-9b88-8d83c9cd684f)
 
 ## Magnetometer Data
