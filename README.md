@@ -28,4 +28,4 @@ Rounded SNR (Regions of Interest): 11
 # Future Goals
 My goal is to get it to work with my own values based on my behavior and my EEG values. I'm currently working on frequency tagging the data using SSVEP and computing comparisons between PSD (Power Spectral Density) and Signal-Noise Ratio (SNR) so that I can practically predict values based on certain sleep factors to be inputted to provide accurate recommendations.
 
-My goal is to also get a fundamnetal understanding of proper scalp and 3D brain plots. The next step would be to provide these plots within the reports for people to get an insight on their brain's functioning.
+My goal is to also get a fundamental understanding of proper scalp and 3D brain plots. The next step would be to provide these plots within the reports for people to get an insight on their brain's functioning.
