@@ -6145,10 +6145,18 @@ elif melatonin_get == "25":
                 report.add_html(html=myhtml, title="General Recommendation Steps")
                 report.save("report_add_html.html", overwrite=True)
 else:
-    sys.exit()
+    #Only if melatonin values seem to be compromised. This usually won't be the case.
+    myhtml="""
+    <h1>I'm not sure about this response</h1>
+    <p>Consider running the system again. If it fails again, send feedback to the creator at <i> abhizgunna@gmail.com </i> </p>"""
+    report.add_html(html=myhtml, title="Error")
+    report.save("report_add_html.html", overwrite=True)
+    #sys.exit()
 
 report.save("report_add_html.html", overwrite=True)
-print(f"{name}'s data report has been generated!")
+print(f"""
+{name}'s data report has been generated!
+""")
 
 #SleepRecommendations()
 
@@ -6390,4 +6398,22 @@ def sleepHTMLGenerator():
     else:
         pass
 
+
+def Feedback():
+    print("""Thank you for using my system. Be sure to check out the Github at https://www.github.com/AbhiramRuthala/SleepMO
+""")
+
+
+Feedback()
+
 sleepHTMLGenerator()
+
+def Connections():
+    print("""
+If you have any feedback that you'd like to send to me, you can email me at abhizgunna@gmail.com.
+""")
+    print("""Be sure to connect with me on LinkedIn at https://www.linkedin.com/in/abhiramruthala to see future updates about the system.""")
+
+
+Connections()
+# Thank you for using my system.
