@@ -4,7 +4,7 @@ A productivity tool that helps you maximize your potential every morning.
 Utilizing the melatonin levels every night, SleepMO provides recommendations on increasing/regulating your melatonin levels so that you can get sound sleep and wake up feeling energized and ready.
 
 # Demo Video
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)]((https://youtu.be/Mk5j4KwnufI?si=ve0aC_O-Wkom0QYO))
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://youtu.be/Mk5j4KwnufI?si=ve0aC_O-Wkom0QYO)
 
 # Projections On Sample Raw Data
 
